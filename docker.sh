@@ -22,3 +22,8 @@ dRestart() {
   dStop $component
   dStart $component
  }
+ dExec() {
+   component=$1
+   command=$2
+   docker exec -it $(docker ps | grep $component | awk '{print $1}') $command
+ }

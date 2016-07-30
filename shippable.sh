@@ -1,4 +1,4 @@
-export SHIPABLE_DIR='/home/harryi3t/work/shippable'
+export SHIPABLE_DIR='/home/harry/work/shippable'
 
 shipRestart() {
   sudo docker stop -t=0 `docker ps -aq`

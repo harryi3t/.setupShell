@@ -10,3 +10,4 @@ source ~/.setupShell/color.sh
 source ~/.setupShell/mongo.sh
 source ~/.setupShell/go.sh
 source ~/.setupShell/sensitiveVars.sh
+source ~/.setupShell/gitlab.sh

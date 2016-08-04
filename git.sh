@@ -2,6 +2,7 @@ alias gpl="git pull main master"
 alias gf="git fetch main master"
 alias gr="git rebase main/master"
 alias gph="git push origin master"
+alias gm="git add . && git commit --amend --no-edit"
 
 function webhookDelete() {
   REPO="$1"

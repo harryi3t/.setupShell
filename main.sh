@@ -12,3 +12,4 @@ source ~/.setupShell/postgres.sh
 source ~/.setupShell/go.sh
 source ~/.setupShell/sensitiveVars.sh
 source ~/.setupShell/gitlab.sh
+source ~/.setupShell/java.sh

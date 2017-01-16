@@ -13,3 +13,4 @@ source ~/.setupShell/go.sh
 source ~/.setupShell/sensitiveVars.sh
 source ~/.setupShell/gitlab.sh
 source ~/.setupShell/java.sh
+source ~/.setupShell/touchpad.sh

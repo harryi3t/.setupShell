@@ -1,2 +1,2 @@
 export PGPASSWORD="abc123"
-alias psql_shippable="psql -h 172.17.0.1 shipdb apiuser"
+alias psql_shippable="sudo psql -h 172.17.42.1 shipdb apiuser"

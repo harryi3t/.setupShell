@@ -1,15 +1,13 @@
 export SHIPABLE_DIR='/home/harry/work/shippable'
 
 shipRestart() {
-  sudo docker stop -t=0 `docker ps -aq`
-  docker rm `docker ps -aq`
-  cd  $SHIPABLE_DIR/one/
-  ./oneup --all
-  cd ../api
-  ./one
-  cd ../www/
-  ./one
-  grunt buildLocal && grunt watch
+  sudo service postgresql stop
+  sudo service redis-server stop
+  docker rm -f `docker ps -aq`
+  cd "$SHIPABLE_DIR/base"
+  rm -f usr/state.json.*
+  cp state.json usr/state.json
+  sudo ./base.sh -i local
 }
 
 debug() {

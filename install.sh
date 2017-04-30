@@ -9,13 +9,7 @@ if [ ! -d "$HOME/.zsh/zsh-autosuggestions" ]; then
   git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/.zsh/zsh-autosuggestions
 fi
 
-touch ~/.zshrc-plugin
-echo "# Added automatically from script by harryi3t"             >> ~/.zshrc-plugin
-echo ""                                                          >> ~/.zshrc-plugin
-echo "plugins=(git z zsh-completions)"                           >> ~/.zshrc-plugin
-echo "source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc-plugin
-echo "source ~/.oh-my-zsh/plugins/z/z.sh"                        >> ~/.zshrc-plugin
-echo "ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'"                  >> ~/.zshrc-plugin
+wget -O ~/.zshrc-plugin https://raw.githubusercontent.com/harryi3t/.setupShell/master/.zshrc-plugin
 
 # f: fail, s:silent, S:show error, L: follow redirect
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

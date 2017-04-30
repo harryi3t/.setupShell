@@ -1,0 +1,13 @@
+# Added automatically from script by harryi3t
+
+plugins=(git z zsh-completions)
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+source ~/.oh-my-zsh/plugins/z/z.sh
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'
+
+function UPDATE_HIGHLIGHT_COLOR() {
+  string='ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE.*,ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE'
+  cmd="sed -i \"s,$string='fg=$1',\" ~/.zshrc"
+  eval "$cmd"
+  source ~/.zshrc
+}

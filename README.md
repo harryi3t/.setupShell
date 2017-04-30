@@ -13,3 +13,11 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/harryi3t/.setupShell/maste
 echo "source ~/.zshrc-plugin" >> ~/.zshrc
 source ~/.zshrc
 ```
+
+
+### To modify the autocompletion color refer the chart below
+Choose a color __XXX__ from the chart and update the ~/.zshrc-plugin file
+```
+ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=XXX'
+```
+![bash-colors](https://i.stack.imgur.com/e63et.png)

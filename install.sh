@@ -15,6 +15,7 @@ echo ""                                                          >> ~/.zshrc-plu
 echo "plugins=(git z zsh-completions)"                           >> ~/.zshrc-plugin
 echo "source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh" >> ~/.zshrc-plugin
 echo "source ~/.oh-my-zsh/plugins/z/z.sh"                        >> ~/.zshrc-plugin
+echo "ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=240'"                  >> ~/.zshrc-plugin
 
 # f: fail, s:silent, S:show error, L: follow redirect
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"

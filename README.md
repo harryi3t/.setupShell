@@ -21,3 +21,8 @@ Choose a color __XXX__ from the chart and update the ~/.zshrc-plugin file
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=XXX'
 ```
 ![bash-colors](https://i.stack.imgur.com/e63et.png)
+
+### Quick edit the color
+```
+sed -i "s,ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE.*,ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=82',g" ~/.zshrc-plugin && source ~/.zshrc
+```

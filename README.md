@@ -11,4 +11,5 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/harryi3t/.setupShell/maste
 ### This will source the plugins into your zshrc file
 ```bash
 echo "source ~/.zshrc-plugin" >> ~/.zshrc
+source ~/.zshrc
 ```

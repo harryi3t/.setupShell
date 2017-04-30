@@ -16,8 +16,8 @@ source ~/.zshrc
 
 
 ### To modify the autocompletion color refer the chart below
-Choose a color __XXX__ from the chart and run
-```
-ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE='fg=XXX'
+Choose a color number __XXX__ from the chart and run
+```bash
+UPDATE_HIGHLIGHT_COLOR XXX
 ```
 ![bash-colors](https://i.stack.imgur.com/e63et.png)

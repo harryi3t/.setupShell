@@ -6,7 +6,7 @@ import json
 import os
 
 url = "http://localhost/api/v3/";
-token = "SX6LyiRdEyhwujAFahg1";
+token = "Eqj42zBo7QYyNQ6UaWxc";
 
 if len(sys.argv) < 2:
     sys.exit('No HTTP method passed')

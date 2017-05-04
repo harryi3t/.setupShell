@@ -22,8 +22,12 @@ dRestart() {
   dStop $component
   dStart $component
  }
- dExec() {
+dExec() {
    component=$1
    command=$2
    docker exec -it $(docker ps | grep $component | awk '{print $1}') $command
- }
+}
+dRemove() {
+   component=$1
+   docker rm -f $(docker ps | grep $component | awk '{print $1}')
+}

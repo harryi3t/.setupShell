@@ -5,9 +5,18 @@ shipRestart() {
   sudo service redis-server stop
   docker rm -f `docker ps -aq`
   cd "$SHIPABLE_DIR/base"
-  rm -f usr/state.json.*
   cp state.json usr/state.json
-  sudo ./base.sh -i local
+  sudo ./base.sh install --local
+  addProcs
+}
+
+addProcs() {
+  # cd "$SHIPABLE_DIR/base"
+  sudo ./myScript.sh 
+}
+
+useNgrok() {
+  sed -i "s,urlParse.parse(.*);,urlParse.parse('$(curl -s localhost:4040/api/tunnels | jq -r '.tunnels[0].public_url')');,g" resources/post.js  && cat resources/post.js | grep 'var parsedUrl' -A 1
 }
 
 debug() {

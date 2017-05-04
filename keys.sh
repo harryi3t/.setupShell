@@ -1,3 +1,5 @@
+#!/bin/zsh
+
 bindkey '`' vi-forward-blank-word
 
 if [ -z "$(lsusb | grep '045e:07b9')" ]; then
